@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(6, 17, 17),
+    rgb(21, 18, 26) 1%,
+    black
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main {
+  min-height: 700px !important;
+  box-shadow: 0px 1px 8px 2px rgb(32, 32, 36);
+}
+
+.optigon {
+  height: 1284px;
+  box-shadow: 0px 1px 8px 2px rgb(32, 32, 36);
+}
+
+.deqityB {
+  height: 700px;
+  box-shadow: 0px 1px 8px 2px rgb(32, 32, 36);
+}
+
+.contactSection {
+  min-height: 700px;
+  align-items: center;
+}

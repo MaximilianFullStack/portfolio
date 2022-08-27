@@ -1,0 +1,59 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(248, 245, 245);
+  position: absolute;
+  margin-top: 10rem;
+  left: 12.5%;
+  max-width: 500px;
+}
+
+.info > h1 {
+  margin: 0;
+  margin-right: auto;
+  font-size: 40px;
+}
+
+.info > h3 {
+  margin: 0;
+  margin-right: auto;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  margin-left: 2rem;
+}
+
+.info > p {
+  margin-right: 10px;
+}
+
+.contactButton {
+  margin-top: 26px;
+  margin-right: auto;
+  font-family: inherit;
+  font-weight: 600;
+  justify-content: center;
+  padding: 8px 26px;
+  font-size: 16px;
+  border-radius: 12px;
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.contactButton:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+.chain {
+  position: absolute;
+  min-height: 700px;
+  right: 5%;
+  /*opacity: 0.28;*/
+  z-index: -2;
+  mask-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0, 0.08),
+    rgb(0, 0, 0, 0.28)
+  );
+}

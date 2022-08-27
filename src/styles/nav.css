@@ -1,0 +1,32 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  max-height: 32px;
+  z-index: 8;
+}
+
+.navButton {
+  position: fixed;
+  margin-top: 22px;
+  margin-right: 28px;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  background-color: rgb(95, 97, 105, 0.99);
+  right: 0;
+  z-index: 9;
+}
+
+.menu > h3 {
+  cursor: pointer;
+}
