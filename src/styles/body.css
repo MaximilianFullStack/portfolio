@@ -19,17 +19,17 @@ body {
 
 .main {
   min-height: 700px !important;
-  box-shadow: 0px 1px 8px 2px rgb(32, 32, 36);
+  box-shadow: 0px 1px 8px 1px rgb(24, 24, 32);
 }
 
 .optigon {
   height: 1284px;
-  box-shadow: 0px 1px 8px 2px rgb(32, 32, 36);
+  box-shadow: 0px 1px 8px 1px rgb(24, 24, 32);
 }
 
 .deqityB {
-  height: 700px;
-  box-shadow: 0px 1px 8px 2px rgb(32, 32, 36);
+  height: 520px;
+  box-shadow: 0px 1px 8px 1px rgb(24, 24, 32);
 }
 
 .contactSection {

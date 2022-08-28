@@ -45,6 +45,29 @@
   background-color: rgb(209, 209, 209);
 }
 
+.scrollInfo {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+  margin-bottom: 16px;
+}
+.scrollInfo > p {
+  color: rgb(214, 214, 214);
+  font-size: 12px;
+  cursor: pointer;
+  z-index: inherit;
+}
+.scrollInfo > img {
+  width: 22px;
+  cursor: pointer;
+  z-index: inherit;
+}
+
 .chain {
   position: absolute;
   min-height: 700px;

@@ -27,7 +27,7 @@ export default function App() {
       <div className="deqityB">
         <Deqity />
       </div>
-      <div className="contactSection">
+      <div className="contactSection" style={{ height: `${size[0]}px` }}>
         <Contact />
       </div>
     </>

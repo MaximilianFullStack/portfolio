@@ -16,6 +16,7 @@ export default function Navbar() {
       topSize = 700;
     }
     window.scrollTo({ top: topSize, behavior: "smooth" });
+    setIsOpen(!isOpen);
   };
   const scrollDeqity = () => {
     let topSize;
@@ -25,6 +26,17 @@ export default function Navbar() {
       topSize = 700;
     }
     window.scrollTo({ top: topSize + 1284, behavior: "smooth" });
+    setIsOpen(!isOpen);
+  };
+  const scrollContact = () => {
+    let topSize;
+    if (size[0] > 700) {
+      topSize = size[0];
+    } else {
+      topSize = 700;
+    }
+    window.scrollTo({ top: topSize + 1284 + 520, behavior: "smooth" });
+    setIsOpen(!isOpen);
   };
 
   useEffect(() => {
@@ -49,10 +61,11 @@ export default function Navbar() {
             className="navButton"
             onClick={() => setIsOpen(!isOpen)}
           />
-
-          <h3 onClick={scrollOptigon}>Optigon Bridge</h3>
-          <h3 onClick={scrollDeqity}> Deqity Protocol</h3>
-          <h3>Contact</h3>
+          <div className="menuOptions">
+            <h3 onClick={scrollOptigon}>Optigon Bridge</h3>
+            <h3 onClick={scrollDeqity}> Deqity Protocol</h3>
+            <h3 onClick={scrollContact}>Contact</h3>
+          </div>
         </div>
       ) : (
         <></>

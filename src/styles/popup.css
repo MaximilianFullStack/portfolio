@@ -1,0 +1,23 @@
+.popupBox {
+  position: absolute;
+  max-width: 300px;
+  max-height: 200px;
+  background-color: rgb(14, 156, 156);
+  border-radius: 20px;
+  z-index: 7;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  opacity: 0.99;
+  box-shadow: 1px 6px 17px 3px rgb(83, 85, 88);
+  cursor: pointer;
+}
+
+.popupBox > h3 {
+  vertical-align: middle;
+  padding: 30px 60px;
+  color: white;
+  font-size: 22px;
+  font-family: 800;
+  letter-spacing: 1px;
+}
