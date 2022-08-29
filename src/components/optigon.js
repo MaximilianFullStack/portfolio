@@ -8,9 +8,9 @@ import "../styles/projects.css";
 export default function Optigon() {
   const [offsetY, setOffsetY] = useState(0);
   const [imageOffset, setImageOffset] = useState(0);
-  const [size, setSize] = useState([window.innerHeight, window.innerHeight]);
+  const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
 
-  const handleResize = () => setSize([window.innerHeight, window.innerHeight]);
+  const handleResize = () => setSize([window.innerHeight, window.innerWidth]);
 
   function handleScroll() {
     let topSize;
@@ -41,56 +41,126 @@ export default function Optigon() {
 
   return (
     <>
-      <div
-        className="project"
-        style={{ transform: `translateY(${offsetY * 0.91}px)` }}
-      >
-        <h1>Optigon Bridge</h1>
-        <h3>An ether bridge between Polygon and Optimism</h3>
-        <p>
-          Each contract acts as a liquidity pool and distrubutes network fees to
-          stakers. A relay handles multi-chain communication by listening for
-          events, then calling functions on the corresponding contract with the
-          recieved data.
-        </p>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/MaximilianFullStack/optigon-bridge-core"
-        >
-          <img src={git} alt="github" className="github" />
-        </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/MaximilianFullStack/optigon-bridge-frontend"
-        >
-          <img src={git} alt="github" className="github" />
-        </a>
-      </div>
-      <div className="images">
-        <div
-          className="imageItem"
-          style={{ transform: `translateX(-${imageOffset * 0.1}px)` }}
-        >
-          <img src={optigonMain} alt="optigon main page" />
-          <p>Polygon to Optimism Bridge Interface</p>
+      {size[1] > 1535 ? (
+        <>
+          <div
+            className="project"
+            style={{ transform: `translateY(${offsetY * 0.91}px)` }}
+          >
+            <h1>Optigon Bridge</h1>
+            <h3>An ether bridge between Polygon and Optimism</h3>
+            <p>
+              Each contract acts as a liquidity pool and distrubutes network
+              fees to stakers. A relay handles multi-chain communication by
+              listening for events, then calling functions on the corresponding
+              contract with the recieved data.
+            </p>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/MaximilianFullStack/optigon-bridge-core"
+            >
+              <img src={git} alt="github" className="github" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/MaximilianFullStack/optigon-bridge-frontend"
+            >
+              <img src={git} alt="github" className="github" />
+            </a>
+          </div>
+
+          <div className="images">
+            <div
+              className="imageItem"
+              style={{ transform: `translateX(-${imageOffset * 0.1}px)` }}
+            >
+              <img src={optigonMain} alt="optigon main page" />
+              <p>Polygon to Optimism Bridge Interface</p>
+            </div>
+            <div
+              className="imageItem"
+              style={{ transform: `translateX(${imageOffset * 0.08}px)` }}
+            >
+              <img src={optigonStake} alt="optigon stake page" />
+              <p>Polygon Stake Interface</p>
+            </div>
+            <div
+              className="imageItem"
+              style={{ transform: `translateX(-${imageOffset * 0.06}px)` }}
+            >
+              <img src={optigonUser} alt="optigon user page" />
+              <p>Polygon User Interface</p>
+            </div>
+          </div>
+        </>
+      ) : (
+        <div className="SMALL">
+          <div className="projectSMALL">
+            <h1>Optigon Bridge</h1>
+            <h3>An ether bridge between Polygon and Optimism</h3>
+            <p>
+              Each contract acts as a liquidity pool and distrubutes network
+              fees to stakers. A relay handles multi-chain communication by
+              listening for events, then calling functions on the corresponding
+              contract with the recieved data.
+            </p>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/MaximilianFullStack/optigon-bridge-core"
+            >
+              <img src={git} alt="github" className="github" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/MaximilianFullStack/optigon-bridge-frontend"
+            >
+              <img src={git} alt="github" className="github" />
+            </a>
+          </div>
+
+          <div className="imagesSMALL">
+            <div
+              className="imageItem"
+              style={{
+                transform: `translateX(-${imageOffset * 0.03}px)`,
+              }}
+            >
+              <img
+                src={optigonMain}
+                alt="optigon main page"
+                style={{ width: `${size[1] / 1.2}px` }}
+              />
+              <p>Polygon to Optimism Bridge Interface</p>
+            </div>
+            <div
+              className="imageItem"
+              style={{ transform: `translateX(${imageOffset * 0.03}px)` }}
+            >
+              <img
+                src={optigonStake}
+                alt="optigon stake page"
+                style={{ width: `${size[1] / 1.2}px` }}
+              />
+              <p>Polygon Stake Interface</p>
+            </div>
+            <div
+              className="imageItem"
+              style={{ transform: `translateX(-${imageOffset * 0.02}px)` }}
+            >
+              <img
+                src={optigonUser}
+                alt="optigon user page"
+                style={{ width: `${size[1] / 1.2}px` }}
+              />
+              <p>Polygon User Interface</p>
+            </div>
+          </div>
         </div>
-        <div
-          className="imageItem"
-          style={{ transform: `translateX(${imageOffset * 0.08}px)` }}
-        >
-          <img src={optigonStake} alt="optigon stake page" />
-          <p>Polygon Stake Interface</p>
-        </div>
-        <div
-          className="imageItem"
-          style={{ transform: `translateX(-${imageOffset * 0.06}px)` }}
-        >
-          <img src={optigonUser} alt="optigon user page" />
-          <p>Polygon User Interface</p>
-        </div>
-      </div>
+      )}
     </>
   );
 }

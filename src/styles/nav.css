@@ -27,6 +27,7 @@
   background-color: rgba(28, 33, 54, 0.99);
   right: 0;
   z-index: 9;
+  animation: slide 0.2s;
 }
 
 .menuOptions {
@@ -43,4 +44,16 @@
 
 .menuOptions > h3:hover {
   color: rgb(187, 187, 187);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(400px);
+  }
+  70% {
+    transform: translateX((100px));
+  }
+  100% {
+    transform: translateX((0px));
+  }
 }

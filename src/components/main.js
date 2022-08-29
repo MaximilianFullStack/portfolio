@@ -5,8 +5,7 @@ import "../styles/main.css";
 
 export default function Main() {
   const [offsetY, setOffsetY] = useState(0);
-  const [arrowOffset, setArrowOffset] = useState(0);
-  const [size, setSize] = useState([window.innerHeight, window.innerHeight]);
+  const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
   const [min, setMin] = useState(window.innerHeight);
 
   const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -17,26 +16,26 @@ export default function Main() {
     }
   };
 
-  function timeout(delay) {
-    return new Promise((res) => setTimeout(res, delay));
-  }
-
-  async function arrowLoop() {
-    await timeout(2000);
-    setArrowOffset(10);
-    await timeout(500);
-    setArrowOffset(0);
-  }
-
   const scrollContact = () => {
-    let topSize;
+    let topSize, optiSize, deqitySize;
     if (size[0] > 700) {
       topSize = size[0];
     } else {
       topSize = 700;
     }
-    window.scrollTo({ top: topSize + 1284 + 520, behavior: "smooth" });
+    if (size[1] > 1535) {
+      optiSize = 1284;
+      deqitySize = 520;
+    } else {
+      optiSize = 1650;
+      deqitySize = 830;
+    }
+    window.scrollTo({
+      top: topSize + optiSize + deqitySize,
+      behavior: "smooth",
+    });
   };
+
   const scrollOptigon = () => {
     let topSize;
     if (size[0] > 700) {
@@ -78,12 +77,7 @@ export default function Main() {
 
       <div className="scrollInfo" style={{ top: `${min - 70}px` }}>
         <p onClick={scrollOptigon}>See Projects Below</p>
-        <img
-          src={arrow}
-          alt=""
-          onClick={scrollOptigon}
-          style={{ transform: `translateY(${arrowOffset}px)` }}
-        />
+        <img src={arrow} alt="" onClick={scrollOptigon} />
       </div>
 
       <img
