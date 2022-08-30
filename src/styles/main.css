@@ -31,6 +31,7 @@
 .contactButton {
   margin-top: 26px;
   margin-right: auto;
+  border: 0;
   font-family: inherit;
   font-weight: 600;
   justify-content: center;
@@ -39,6 +40,7 @@
   border-radius: 12px;
   max-width: 150px;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .contactButton:hover {

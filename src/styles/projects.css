@@ -17,6 +17,7 @@
   color: rgb(248, 245, 245);
   position: absolute;
   max-width: 500px;
+  min-width: 380px;
   margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
