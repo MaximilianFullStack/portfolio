@@ -64,7 +64,7 @@ export default function Main() {
         style={{ transform: `translateY(${offsetY * 0.35}px)` }}
       >
         <h1>Maximilian Mathews</h1>
-        <h3>DeFi Engineer</h3>
+        <h3>DeFi Engineer {"&"} Polygon Hackathon Prize Winner</h3>
         {/* <p>
           From the time I discovered blockchain technology, I knew it was
           revolutionary, and I desired to be part of its development and
