@@ -50,10 +50,11 @@ export default function Optigon() {
             <h1>Optigon Bridge</h1>
             <h3>An ether bridge between Polygon and Optimism</h3>
             <p>
-              Each contract acts as a liquidity pool and distrubutes network
-              fees to stakers. A relay handles multi-chain communication by
-              listening for events, then calling functions on the corresponding
-              contract with the recieved data.
+              Users can exchange WETH on Polygon for ETH on Optimism and vice
+              versa. Each contract acts as a liquidity pool and distrubutes
+              network fees to stakers. A relay handles multi-chain communication
+              by listening for events, then calling functions on the
+              corresponding contract with the recieved data.
             </p>
             <a
               target="_blank"
@@ -101,10 +102,11 @@ export default function Optigon() {
             <h1>Optigon Bridge</h1>
             <h3>An ether bridge between Polygon and Optimism</h3>
             <p>
-              Each contract acts as a liquidity pool and distrubutes network
-              fees to stakers. A relay handles multi-chain communication by
-              listening for events, then calling functions on the corresponding
-              contract with the recieved data.
+              Users can exchange WETH on Polygon for ETH on Optimism and vice
+              versa. Each contract acts as a liquidity pool and distrubutes
+              network fees to stakers. A relay handles multi-chain communication
+              by listening for events, then calling functions on the
+              corresponding contract with the recieved data.
             </p>
             <a
               target="_blank"

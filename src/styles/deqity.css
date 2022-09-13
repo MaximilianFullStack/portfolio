@@ -42,6 +42,10 @@
   margin-right: 10px;
 }
 
+.deqitySMALL > p {
+  min-inline-size: 480px;
+}
+
 .links {
   display: flex;
   flex-direction: row;

@@ -43,6 +43,10 @@
   margin-right: 10px;
 }
 
+.projectSMALL > p {
+  min-inline-size: 400px;
+}
+
 .github {
   margin-top: 24px;
   width: 36px;
