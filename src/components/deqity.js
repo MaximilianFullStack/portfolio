@@ -20,7 +20,7 @@ export default function Deqity() {
             //style={{ transform: `translateY(${offsetY * 0.91}px)` }}
           >
             <h1>Deqity Protocol</h1>
-            <h3>Submission For the 2022 Polygon Summer Hackathon</h3>
+            <h3>2022 Polygon Buidl It Hackathon Prize Winner</h3>
             <p>
               A decentralized marketplace to buy and sell tokenized private
               equity. It works by representing shares as erc-20 tokens then
@@ -63,7 +63,7 @@ export default function Deqity() {
             //style={{ transform: `translateY(${offsetY * 0.91}px)` }}
           >
             <h1>Deqity Protocol</h1>
-            <h3>Submission For the 2022 Polygon Summer Hackathon</h3>
+            <h3>2022 Polygon Buidl It Hackathon Prize Winner</h3>
             <p>
               A decentralized marketplace to buy and sell tokenized private
               equity. It works by representing shares as erc-20 tokens then
