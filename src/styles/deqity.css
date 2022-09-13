@@ -43,7 +43,7 @@
 }
 
 .deqitySMALL > p {
-  min-inline-size: 480px;
+  min-inline-size: 350px;
 }
 
 .links {
@@ -142,6 +142,6 @@
 .imagesSMALL {
   display: flex;
   flex-direction: column;
-  margin-top: 28rem;
+  margin-top: 30rem;
   position: absolute;
 }

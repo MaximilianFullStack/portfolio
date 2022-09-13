@@ -58,8 +58,7 @@ export default function Deqity() {
               allowing shareholders to make transcactions with said shares. The
               owner of the contract can also inact a special sale in which all
               the shareholders are diluted and compensated according to the
-              dilution amount. I developed multiple complex smart contracts and
-              an frontend to make it accessible for non-developers.
+              dilution amount.
             </p>
             <div className="links">
               <a
@@ -116,8 +115,7 @@ export default function Deqity() {
               allowing shareholders to make transcactions with said shares. The
               owner of the contract can also inact a special sale in which all
               the shareholders are diluted and compensated according to the
-              dilution amount. I developed multiple complex smart contracts and
-              an frontend to make it accessible for non-developers.
+              dilution amount.
             </p>
             <div className="links">
               <a
