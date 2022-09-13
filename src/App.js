@@ -35,7 +35,7 @@ export default function App() {
           <div className="optigon" style={{ height: `1650px` }}>
             <Optigon />
           </div>
-          <div className="deqityB" style={{ height: `830px` }}>
+          <div className="deqityB" style={{ height: `1225px` }}>
             <Deqity />
           </div>
         </>

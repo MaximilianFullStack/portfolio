@@ -25,10 +25,10 @@ export default function Main() {
     }
     if (size[1] > 1535) {
       optiSize = 1284;
-      deqitySize = 520;
+      deqitySize = 934;
     } else {
       optiSize = 1650;
-      deqitySize = 830;
+      deqitySize = 1225;
     }
     window.scrollTo({
       top: topSize + optiSize + deqitySize,
@@ -65,11 +65,11 @@ export default function Main() {
       >
         <h1>Maximilian Mathews</h1>
         <h3>DeFi Engineer</h3>
-        <p>
+        {/* <p>
           From the time I discovered blockchain technology, I knew it was
           revolutionary, and I desired to be part of its development and
           adoption.
-        </p>
+        </p> */}
         <button className="contactButton" onClick={scrollContact}>
           Contact Me
         </button>

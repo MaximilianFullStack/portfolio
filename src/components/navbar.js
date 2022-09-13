@@ -44,10 +44,10 @@ export default function Navbar() {
     }
     if (size[1] > 1535) {
       optiSize = 1284;
-      deqitySize = 520;
+      deqitySize = 934;
     } else {
       optiSize = 1650;
-      deqitySize = 830;
+      deqitySize = 1225;
     }
     window.scrollTo({
       top: topSize + optiSize + deqitySize,
