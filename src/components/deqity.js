@@ -54,11 +54,11 @@ export default function Deqity() {
             <h3>2022 Polygon Buidl It Hackathon Prize Winner</h3>
             <p>
               A decentralized marketplace to buy and sell tokenized private
-              equity. It works by representing shares as erc-20 tokens then
-              allowing shareholders to make transcactions with said shares. The
-              owner of the contract can also inact a special sale in which all
-              the shareholders are diluted and compensated according to the
-              dilution amount.
+              equity. It works by representing shares as erc-20 tokens and then
+              allowing shareholders to make transactions with said shares. The
+              contract owner can also enact a special sale in which all the
+              shareholders are diluted and compensated according to the dilution
+              amount.
             </p>
             <div className="links">
               <a
@@ -111,11 +111,11 @@ export default function Deqity() {
             <h3>2022 Polygon Buidl It Hackathon Prize Winner</h3>
             <p>
               A decentralized marketplace to buy and sell tokenized private
-              equity. It works by representing shares as erc-20 tokens then
-              allowing shareholders to make transcactions with said shares. The
-              owner of the contract can also inact a special sale in which all
-              the shareholders are diluted and compensated according to the
-              dilution amount.
+              equity. It works by representing shares as erc-20 tokens and then
+              allowing shareholders to make transactions with said shares. The
+              contract owner can also enact a special sale in which all the
+              shareholders are diluted and compensated according to the dilution
+              amount.
             </p>
             <div className="links">
               <a
